@@ -26,7 +26,7 @@ const Contact = () => {
     }
 
     const { name, email, phone, message } = formData;
-    const recipientEmail = 'juliandgutierrezc95@gmail.com';
+    const recipientEmail = 'info@zielconsulting.com.co';
     const subject = encodeURIComponent(`Consulta de Ziel Consulting de ${name}`);
     const body = encodeURIComponent(
       `Nombre: ${name}\n` +
@@ -53,37 +53,28 @@ const Contact = () => {
             </h3>
             <p className="mb-10 text-lg">Estamos listos para ayudarte.</p>
 
-            <div className="space-y-6">
-              {/* Email */}
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4-4 4m8 0H4" />
+ <div className="space-y-6">
+              <div className="flex items-start text-black">
+                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <span className="text-lg">info@zielconsulting.com.co</span>
               </div>
 
-              {/* Teléfono */}
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h2l3.6 7.59L5.25 16H19v2H4a1 1 0 01-1-1V5z" />
+              <div className="flex items-start text-black">
+                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="text-lg">+57 316 535 6364</span>
+                <span className="text-lg">+57 316 535 6364</span> {/* Número de teléfono con +57 */}
               </div>
 
-              {/* Dirección */}
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c1.656 0 3-1.344 3-3s-1.344-3-3-3-3 1.344-3 3 1.344 3 3 3zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+             div className="flex items-start text-black">
+                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <span className="text-lg">Bogotá, Colombia</span>
-              </div>
-
-              {/* Horario */}
-              <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span className="text-lg">Lunes a viernes, 8:00 a.m. - 5:00 p.m.</span>
+            
               </div>
             </div>
           </div>
