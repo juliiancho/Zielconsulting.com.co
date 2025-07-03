@@ -8,33 +8,31 @@ const Contact = () => {
     message: ''
   });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    const { name, email, phone, message } = formData;
-    const recipientEmail = 'juliandgutierrezc95@gmail.com';
-    const subject = encodeURIComponent(Consulta de Ziel Consulting de ${name});
-    const body = encodeURIComponent(
-      Nombre: ${name}\n +
-      Correo: ${email}\n +
-      Teléfono: ${phone}\n\n +
-      Mensaje:\n${message}
-    );
+  const { name, email, phone, message } = formData;
+  const recipientEmail = 'info@zielconsulting.com.co';
+  const subject = encodeURIComponent(`Consulta de Ziel Consulting de ${name}`);
+  const body = encodeURIComponent(
+    `Nombre: ${name}\n` +
+    `Correo: ${email}\n` +
+    `Teléfono: ${phone}\n\n` +
+    `Mensaje:\n${message}`
+  );
 
-    // Abre el cliente de correo predeterminado del usuario
-    window.location.href = mailto:${recipientEmail}?subject=${subject}&body=${body};
+  window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
 
-    // Limpiar formulario después de intentar enviar
-    setFormData({ name: '', email: '', phone: '', message: '' });
-    alert('Se abrirá tu cliente de correo para enviar el mensaje. ¡Gracias por contactarnos!');
-  };
+  setFormData({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+    consent: false,
+  });
+
+  alert('Se abrirá tu cliente de correo para enviar el mensaje. ¡Gracias por contactarnos!');
+};
 
   return (
     <section id="contacto" className="py-20 bg-white">
