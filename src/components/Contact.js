@@ -126,6 +126,22 @@ const Contact = () => {
                   className="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-3 px-4 focus:outline-none focus:ring-2 focus:ring-[#199ca5] focus:border-transparent transition-all duration-200 resize-none text-black"
                 ></textarea>
               </div>
+  <div className="flex items-start">
+  <input
+    type="checkbox"
+    id="dataConsent"
+    required
+    className="mt-1 mr-3"
+  />
+  <label htmlFor="dataConsent" className="text-sm text-black">
+    Autorizo el tratamiento de mis datos personales de acuerdo con la
+    <a href="/politica-de-privacidad" target="_blank" rel="noopener noreferrer" className="text-[#199ca5] underline ml-1">
+      política de privacidad
+    </a>
+    .
+  </label>
+</div>
+
               <div>
                 <button
                   type="submit"
