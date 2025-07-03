@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
     
     const { name, email, phone, message } = formData;
-    const recipientEmail = 'juliandgutierrezc95@gmail.com';
+    const recipientEmail = 'info@zielconsulting.com.co';
     const subject = encodeURIComponent(`Consulta de Ziel Consulting de ${name}`);
     const body = encodeURIComponent(
       `Nombre: ${name}\n` +
@@ -135,7 +135,7 @@ const Contact = () => {
   />
   <label htmlFor="dataConsent" className="text-sm text-black">
     Autorizo el tratamiento de mis datos personales de acuerdo con la
-    <a href="/politica-de-privacidad" target="_blank" rel="noopener noreferrer" className="text-[#199ca5] underline ml-1">
+    <a href="/politica-de-tratamiento-de-datos" target="_blank" rel="noopener noreferrer" className="text-[#199ca5] underline ml-1">
       política de privacidad
     </a>
     .
