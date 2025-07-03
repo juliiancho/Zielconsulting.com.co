@@ -5,18 +5,25 @@ const Contact = () => {
     name: '',
     email: '',
     phone: '',
-    message: ''
+    message: '',
+    consent: false,
   });
 
   const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: type === 'checkbox' ? checked : value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!formData.consent) {
+      alert('Por favor acepta el tratamiento de datos personales.');
+      return;
+    }
 
     const { name, email, phone, message } = formData;
     const recipientEmail = 'juliandgutierrezc95@gmail.com';
@@ -29,7 +36,7 @@ const Contact = () => {
     );
 
     window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setFormData({ name: '', email: '', phone: '', message: '', consent: false });
     alert('Se abrirá tu cliente de correo para enviar el mensaje. ¡Gracias por contactarnos!');
   };
 
@@ -39,44 +46,53 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-center text-[#1b1d1d] mb-16">Contacto</h2>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <div className="bg-[#f5f5f5] p-10 rounded-xl shadow-lg">
+          {/* Lado izquierdo - información */}
+          <div className="bg-[#f5f5f5] p-10 rounded-xl shadow-lg text-black">
             <h3 className="text-2xl font-bold text-[#199ca5] mb-6">
               ¿Deseas implementar un sistema de gestión o recibir asesoría especializada?
             </h3>
-            <p className="text-black mb-10 text-lg">Estamos listos para ayudarte.</p>
+            <p className="mb-10 text-lg">Estamos listos para ayudarte.</p>
 
-            <div className="space-y-6 text-black">
+            <div className="space-y-6">
+              {/* Email */}
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8..." />
+                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4-4 4m8 0H4" />
                 </svg>
                 <span className="text-lg">info@zielconsulting.com.co</span>
               </div>
+
+              {/* Teléfono */}
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1..." />
+                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h2l3.6 7.59L5.25 16H19v2H4a1 1 0 01-1-1V5z" />
                 </svg>
                 <span className="text-lg">+57 316 535 6364</span>
               </div>
+
+              {/* Dirección */}
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998..." />
+                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c1.656 0 3-1.344 3-3s-1.344-3-3-3-3 1.344-3 3 1.344 3 3 3zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                 </svg>
                 <span className="text-lg">Bogotá, Colombia</span>
               </div>
+
+              {/* Horario */}
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3..." />
+                <svg className="w-6 h-6 text-[#199ca5] mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-lg">Lunes a viernes, 8:00 a.m. - 5:00 p.m.</span>
               </div>
             </div>
           </div>
 
+          {/* Lado derecho - formulario */}
           <div className="bg-[#f5f5f5] p-10 rounded-xl shadow-lg">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 text-black">
               <div>
-                <label htmlFor="name" className="block text-lg font-medium text-black mb-2">Nombre</label>
+                <label htmlFor="name" className="block text-lg font-medium mb-2">Nombre</label>
                 <input
                   type="text"
                   id="name"
@@ -84,12 +100,11 @@ const Contact = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg shadow-sm py-3 px-4 text-black focus:outline-none focus:ring-2 focus:ring-[#199ca5]"
+                  className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:ring-[#199ca5] focus:border-[#199ca5]"
                 />
               </div>
-
               <div>
-                <label htmlFor="email" className="block text-lg font-medium text-black mb-2">Correo electrónico</label>
+                <label htmlFor="email" className="block text-lg font-medium mb-2">Correo electrónico</label>
                 <input
                   type="email"
                   id="email"
@@ -97,24 +112,22 @@ const Contact = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg shadow-sm py-3 px-4 text-black focus:outline-none focus:ring-2 focus:ring-[#199ca5]"
+                  className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:ring-[#199ca5] focus:border-[#199ca5]"
                 />
               </div>
-
               <div>
-                <label htmlFor="phone" className="block text-lg font-medium text-black mb-2">Teléfono</label>
+                <label htmlFor="phone" className="block text-lg font-medium mb-2">Teléfono</label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg shadow-sm py-3 px-4 text-black focus:outline-none focus:ring-2 focus:ring-[#199ca5]"
+                  className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:ring-[#199ca5] focus:border-[#199ca5]"
                 />
               </div>
-
               <div>
-                <label htmlFor="message" className="block text-lg font-medium text-black mb-2">Mensaje</label>
+                <label htmlFor="message" className="block text-lg font-medium mb-2">Mensaje</label>
                 <textarea
                   id="message"
                   name="message"
@@ -122,30 +135,29 @@ const Contact = () => {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg shadow-sm py-3 px-4 text-black resize-none focus:outline-none focus:ring-2 focus:ring-[#199ca5]"
+                  className="w-full border border-gray-300 rounded-lg py-3 px-4 resize-none focus:ring-[#199ca5] focus:border-[#199ca5]"
                 ></textarea>
               </div>
 
-              {/* ✅ Consentimiento de datos personales */}
-              <div className="flex items-start mb-4">
+              {/* Autorización tratamiento de datos */}
+              <div className="flex items-start">
                 <input
                   type="checkbox"
-                  id="dataConsent"
-                  required
+                  id="consent"
+                  name="consent"
+                  checked={formData.consent}
+                  onChange={handleChange}
                   className="mt-1 mr-3"
                 />
-                <label htmlFor="dataConsent" className="text-sm text-black">
-                  Autorizo el tratamiento de mis datos personales de acuerdo con la
-                  <a href="/politica-de-privacidad" target="_blank" rel="noopener noreferrer" className="text-[#199ca5] underline ml-1">
-                    política de privacidad
-                  </a>.
+                <label htmlFor="consent" className="text-sm text-gray-700">
+                  Autorizo el tratamiento de mis datos personales conforme a la política de privacidad de Ziel Consulting.
                 </label>
               </div>
 
               <div>
                 <button
                   type="submit"
-                  className="w-full bg-[#199ca5] text-white py-3 px-4 rounded-lg font-semibold text-lg hover:bg-[#14818a] transition-all duration-300 transform hover:-translate-y-0.5 shadow-md hover:shadow-lg"
+                  className="w-full bg-[#199ca5] text-white py-3 px-4 rounded-lg font-semibold text-lg hover:bg-[#14818a] transition duration-300 shadow-md hover:shadow-lg"
                 >
                   Enviar mensaje
                 </button>
