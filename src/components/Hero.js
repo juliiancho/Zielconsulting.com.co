@@ -1,21 +1,22 @@
 import React from 'react';
 
-const Hero = () => {
+const ConsultingHero = () => {
   return (
-    <section id="inicio" className="bg-[#199ca5] text-white py-24 md:py-40 flex items-center justify-center min-h-[calc(100vh-64px)]"> {/* Ajuste de altura y centrado */}
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight animate-fade-in-up">
-          Ziel Consulting
+    <div className="relative h-[60vh] flex items-center justify-center bg-blue-900">
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative z-10 text-center px-4">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          Soluciones Integrales en Gestión Empresarial
         </h1>
-        <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-0 animate-fade-in-up animation-delay-200">
-          Impulsamos la eficiencia, la sostenibilidad y el cumplimiento normativo de tu organización a través de soluciones integrales en gestión empresarial.
+        <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+          Optimizamos tus procesos operativos con consultoría especializada en calidad, medio ambiente y seguridad laboral
         </p>
-        <button className="bg-white text-[#199ca5] font-bold py-3 px-8 rounded-full inline-block shadow-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 opacity-0 animate-fade-in-up animation-delay-400">
-          Contáctanos
+        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+          Solicitar Consulta
         </button>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Hero;
+export default ConsultingHero;
