@@ -1,6 +1,7 @@
 import React from 'react';
+import logoFooter from '../assets/logo-footer.png'; // Ajusta esta ruta si estás en otra carpeta
 
-const Footer = ({ navigateTo }) => { // Recibimos la función navigateTo
+const Footer = ({ navigateTo }) => {
   return (
     <footer className="bg-[#1b1d1d] text-white py-12">
       <div className="container mx-auto px-6">
@@ -8,9 +9,9 @@ const Footer = ({ navigateTo }) => { // Recibimos la función navigateTo
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="https://4tsix0yujj.ufs.sh/f/2vMRHqOYUHc0Frr3csoDzTWwmhl5UyNfsFj9RSnotvEAKeiM" 
+                src={logoFooter} 
                 alt="Ziel Consulting Logo" 
-                className="h-20 filter brightness-0 invert" // Logo en el footer con filtro brightness-0 invert para que se vea completamente blanco
+                className="h-20 filter brightness-0 invert" // Aplica filtros para que se vea blanco
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
