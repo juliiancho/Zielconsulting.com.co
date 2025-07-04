@@ -2,7 +2,7 @@ import React from 'react';
 
 const ConsultingHero = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center bg-blue-900">
+    <div className="relative h-[60vh] flex items-center justify-center bg-blue-900">
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-center px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
