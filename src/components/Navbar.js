@@ -1,5 +1,5 @@
 import React from 'react';
-import logoHero from '../assets/logo-hero.png';
+import logo from '../assets/logo.png'; // Asegúrate que esta ruta es correcta
 
 const Navbar = ({ navigateTo }) => {
   return (
@@ -7,12 +7,11 @@ const Navbar = ({ navigateTo }) => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src={logoHero} 
-            alt="Ziel Consulting Logo" 
-            className="h-10 md:h-12 transition-transform duration-300 hover:scale-105"
+            src={logo}
+            alt="Ziel Consulting Logo"
+            className="h-10 transition-transform duration-300 hover:scale-105"
           />
         </div>
-        {/* resto del navbar */}
         <div className="hidden md:flex space-x-8">
           <button onClick={() => navigateTo('inicio')} className="text-black hover:text-[#199ca5] relative group transition-colors duration-300">
             Inicio
