@@ -12,14 +12,14 @@ const Hero = () => {
 
       {/* Contenido del hero */}
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
           Soluciones Integrales en Gestión Empresarial
         </h1>
         <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
           Optimizamos tus procesos con consultoría especializada.
         </p>
         <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
-          Solicitar Consulta
+          Solicitar Asesoría
         </button>
       </div>
     </div>
