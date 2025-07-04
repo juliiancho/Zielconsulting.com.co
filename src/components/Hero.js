@@ -4,7 +4,7 @@ import heroImage from '../assets/hero.jpg'; // Ajusta la ruta si tu imagen está
 const Hero = () => {
   return (
     <div
-      className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
+      className="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       {/* Capa oscura para hacer más legible el texto */}
@@ -12,7 +12,7 @@ const Hero = () => {
 
       {/* Contenido del hero */}
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
           Soluciones Integrales en Gestión Empresarial
         </h1>
         <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
