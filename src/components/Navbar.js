@@ -9,7 +9,7 @@ const Navbar = ({ navigateTo }) => {
           <img 
             src={logo}
             alt="Ziel Consulting Logo"
-            className="h-10 transition-transform duration-300 hover:scale-105"
+            className="h-12 transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="hidden md:flex space-x-8">
