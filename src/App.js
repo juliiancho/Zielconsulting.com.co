@@ -1,31 +1,31 @@
-import React, { useState } from 'react'; // Importamos useState para la navegación
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton'; // 🔹 Importa el botón
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('inicio'); // Estado para controlar la página actual
+  const [currentPage, setCurrentPage] = useState('inicio');
 
-  // Función para manejar la navegación (simulada sin react-router-dom)
   const navigateTo = (pageId) => {
     setCurrentPage(pageId);
-    // Desplazamiento suave a la sección
     document.getElementById(pageId).scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div className="font-sans bg-gray-50 text-black"> {/* Aseguramos el color de texto global */}
-      <Navbar navigateTo={navigateTo} /> {/* Pasamos la función de navegación al Navbar */}
+    <div className="font-sans bg-gray-50 text-black">
+      <Navbar navigateTo={navigateTo} />
       <main>
         <Hero />
         <About />
         <Services />
         <Contact />
       </main>
-      <Footer navigateTo={navigateTo} /> {/* Pasamos la función de navegación al Footer */}
+      <Footer navigateTo={navigateTo} />
+      <WhatsAppButton /> {/* 🔹 Aquí se muestra el botón flotante */}
     </div>
   );
 };
