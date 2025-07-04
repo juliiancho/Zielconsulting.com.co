@@ -11,7 +11,7 @@ const Footer = ({ navigateTo }) => {
               <img 
                 src={logoFooter} 
                 alt="Ziel Consulting Logo" 
-                className="h-20 filter brightness-0 invert" // Aplica filtros para que se vea blanco
+                className="h-15 filter brightness-0 invert" // Aplica filtros para que se vea blanco
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
