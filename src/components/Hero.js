@@ -18,9 +18,12 @@ const Hero = () => {
         <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
           Optimizamos tus procesos con consultoría especializada.
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
-          Solicitar Asesoría
-        </button>
+        <button
+  onClick={() => document.getElementById("contacto").scrollIntoView({ behavior: "smooth" })}
+  className="bg-[#17979f] hover:bg-[#127a81] text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105"
+>
+  Solicitar Asesoría
+</button>
       </div>
     </div>
   );
