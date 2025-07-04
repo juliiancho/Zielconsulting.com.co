@@ -1,16 +1,18 @@
 import React from 'react';
+import logoHero from '../assets/logo-hero.png';
 
-const Navbar = ({ navigateTo }) => { // Recibimos la función navigateTo
+const Navbar = ({ navigateTo }) => {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md backdrop-blur-sm bg-opacity-80">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="https://4tsix0yujj.ufs.sh/f/2vMRHqOYUHc039boOXAku0HlIPwSxAEOXk6nTjd9beaNftrh" 
+            src={logoHero} 
             alt="Ziel Consulting Logo" 
-            className="h-10 transition-transform duration-300 hover:scale-105" // Logo a la mitad de tamaño (h-10)
+            className="h-10 md:h-12 transition-transform duration-300 hover:scale-105"
           />
         </div>
+        {/* resto del navbar */}
         <div className="hidden md:flex space-x-8">
           <button onClick={() => navigateTo('inicio')} className="text-black hover:text-[#199ca5] relative group transition-colors duration-300">
             Inicio
