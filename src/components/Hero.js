@@ -4,7 +4,7 @@ import heroImage from '../assets/hero.jpg'; // Ajusta la ruta si tu imagen está
 const Hero = () => {
   return (
     <div
-      className="relative h-[50vh] flex items-center justify-center bg-cover bg-center"
+      className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       {/* Capa oscura para hacer más legible el texto */}
@@ -16,7 +16,7 @@ const Hero = () => {
           Soluciones Integrales en Gestión Empresarial
         </h1>
         <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-          Optimizamos tus procesos operativos con consultoría especializada en calidad, medio ambiente y seguridad laboral.
+          Optimizamos tus procesos con consultoría especializada.
         </p>
         <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
           Solicitar Consulta
