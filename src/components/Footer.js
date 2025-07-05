@@ -70,7 +70,7 @@ export default function Footer({ navigateTo }) {
         {/* Columna 3: Contacto */}
         <div>
           <h3 className="text-xl font-bold mb-4">Contáctanos</h3>
-          <p className="text-sm text-gray-400">Cra 49# 137 - 80, Bogotá</p>
+          <p className="text-sm text-gray-400">Cra 49 # 137 - 80, Bogotá</p>
           <p className="text-sm text-gray-400">info@zielconsulting.com.co</p>
           <p className="text-sm text-gray-400">Tel: 3165356364</p>
         </div>
