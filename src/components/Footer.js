@@ -84,21 +84,21 @@ export default function Footer({ navigateTo }) {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <img src={linkedinLogo} alt="LinkedIn" className="w-5 h-5" />
+              <img src={linkedinLogo} alt="LinkedIn" className="w-5 h-5 filter invert" />
             </a>
             <a 
               href="https://www.instagram.com/zielconsulting" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <img src={instagramLogo} alt="Instagram" className="w-5 h-5" />
+              <img src={instagramLogo} alt="Instagram" className="w-5 h-5 filter invert" />
             </a>
             <a 
               href="https://www.facebook.com/zielconsulting" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <img src={facebookLogo} alt="Facebook" className="w-5 h-5" />
+              <img src={facebookLogo} alt="Facebook" className="w-5 h-5 filter invert" />
             </a>
           </div>
         </div>
