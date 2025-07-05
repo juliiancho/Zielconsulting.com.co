@@ -87,7 +87,7 @@ export default function Footer({ navigateTo }) {
               <img src={linkedinLogo} alt="LinkedIn" className="w-5 h-5 filter invert" />
             </a>
             <a 
-              href="https://www.instagram.com/zielconsulting" 
+              href="https://www.instagram.com/zielconsulting?igsh=c3oxNmx0cjRxa3I%3D&utm_source=qr" 
               target="_blank" 
               rel="noopener noreferrer"
             >
