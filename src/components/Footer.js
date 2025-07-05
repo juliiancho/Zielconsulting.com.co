@@ -56,12 +56,12 @@ export default function Footer({ navigateTo }) {
             </li>
             <li>
               <a 
-                href="/politica-de-privacidad.html" 
+                href="/politica-de-tratamiento-de-datos.html" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
               >
-                Política de privacidad
+                Política de tratamiento de datos
               </a>
             </li>
           </ul>
