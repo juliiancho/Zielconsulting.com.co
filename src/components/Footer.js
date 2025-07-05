@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin } from 'lucide-react'; // Importa íconos de Lucide
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 export default function Footer({ navigateTo }) {
@@ -73,9 +73,8 @@ export default function Footer({ navigateTo }) {
           <h3 className="text-xl font-bold mb-4">Contáctanos</h3>
           <p className="text-sm text-gray-400">Cra 49# 137 - 80, Bogotá</p>
           <p className="text-sm text-gray-400">info@zielconsulting.com.co</p>
-          <p className="text-sm text-gray-400">Tel: 3165356364</p>
+          <p className="text-sm text-gray-400 mb-4">Tel: 3165356364</p>
 
-          {/* Redes sociales */}
           <div className="flex space-x-4 mt-4">
             <a 
               href="https://www.linkedin.com/company/zielconsulting" 
@@ -83,7 +82,7 @@ export default function Footer({ navigateTo }) {
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              <Linkedin size={20} />
+              <Linkedin size={24} />
             </a>
             <a 
               href="https://www.instagram.com/zielconsulting" 
@@ -91,7 +90,7 @@ export default function Footer({ navigateTo }) {
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              <Instagram size={20} />
+              <Instagram size={24} />
             </a>
             <a 
               href="https://www.facebook.com/zielconsulting" 
@@ -99,7 +98,7 @@ export default function Footer({ navigateTo }) {
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              <Facebook size={20} />
+              <Facebook size={24} />
             </a>
           </div>
         </div>
