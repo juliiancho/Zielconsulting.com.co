@@ -1,5 +1,7 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import facebookLogo from '../assets/facebook-logo.svg';
+import instagramLogo from '../assets/instagram-logo.svg';
+import linkedinLogo from '../assets/linkedin-logo.svg';
 import logo from '../assets/logo.png';
 
 export default function Footer({ navigateTo }) {
