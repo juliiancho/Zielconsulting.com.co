@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from '../assets/logo.png';
+import facebookLogo from '../assets/facebook-logo.svg';
+import instagramLogo from '../assets/instagram-logo.svg';
+import linkedinLogo from '../assets/linkedin-logo.svg';
 
 export default function Footer({ navigateTo }) {
   return (
@@ -79,26 +82,23 @@ export default function Footer({ navigateTo }) {
             <a 
               href="https://www.linkedin.com/company/zielconsulting" 
               target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-gray-400 hover:text-white transition-colors duration-300"
+              rel="noopener noreferrer"
             >
-              <img src={require('../assets/linkedin-logo.svg')} alt="LinkedIn" className="w-5 h-5" />
+              <img src={linkedinLogo} alt="LinkedIn" className="w-5 h-5" />
             </a>
             <a 
               href="https://www.instagram.com/zielconsulting" 
               target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-gray-400 hover:text-white transition-colors duration-300"
+              rel="noopener noreferrer"
             >
-              <img src={require('../assets/instagram-logo.svg')} alt="Instagram" className="w-5 h-5" />
+              <img src={instagramLogo} alt="Instagram" className="w-5 h-5" />
             </a>
             <a 
               href="https://www.facebook.com/zielconsulting" 
               target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-gray-400 hover:text-white transition-colors duration-300"
+              rel="noopener noreferrer"
             >
-              <img src={require('../assets/facebook-logo.svg')} alt="Facebook" className="w-5 h-5" />
+              <img src={facebookLogo} alt="Facebook" className="w-5 h-5" />
             </a>
           </div>
         </div>
