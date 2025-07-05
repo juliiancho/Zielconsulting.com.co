@@ -80,7 +80,7 @@ export default function Footer({ navigateTo }) {
           {/* Redes sociales */}
           <div className="flex space-x-4 mt-4">
             <a 
-              href="https://www.linkedin.com/company/zielconsulting" 
+              href="https://www.linkedin.com/company/ziel-consulting-S-A-S" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -94,7 +94,7 @@ export default function Footer({ navigateTo }) {
               <img src={instagramLogo} alt="Instagram" className="w-5 h-5 filter invert" />
             </a>
             <a 
-              href="https://www.facebook.com/zielconsulting" 
+              href="https://www.facebook.com/profile.php?id=61578124134608" 
               target="_blank" 
               rel="noopener noreferrer"
             >
