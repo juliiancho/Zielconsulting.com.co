@@ -1,6 +1,5 @@
 import React from 'react';
-import logoFooter from '../assets/logo-footer.png'; // Asegúrate de que el nombre y extensión coincidan exactamente
-
+import logo from '../assets/logo.png';
 const Footer = ({ navigateTo }) => {
   return (
     <footer className="bg-[#1b1d1d] text-white py-12">
