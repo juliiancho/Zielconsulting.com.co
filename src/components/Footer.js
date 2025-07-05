@@ -7,7 +7,7 @@ export default function Footer({ navigateTo }) {
         
         {/* Columna 1: Logo + lema */}
         <div>
-          <img src="/logo-footer.png" alt="Logo Ziel Consulting" className="w-36 mb-4" />
+          <img src="/logo.png" alt="Logo Ziel Consulting" className="w-36 mb-4" />
           <p className="text-sm text-gray-400">
             Soluciones empresariales con impacto.
           </p>
