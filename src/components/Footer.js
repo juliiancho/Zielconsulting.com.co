@@ -8,7 +8,11 @@ export default function Footer({ navigateTo }) {
         
         {/* Columna 1: Logo + lema */}
         <div>
-          <img src={logo} alt="Logo Ziel Consulting" className="w-36 mb-4" />
+          <img 
+            src={logo} 
+            alt="Logo Ziel Consulting" 
+            className="w-36 mb-4 filter brightness-0 invert" 
+          />
           <p className="text-sm text-gray-400">
             Soluciones empresariales con impacto.
           </p>
@@ -66,15 +70,3 @@ export default function Footer({ navigateTo }) {
         {/* Columna 3: Contacto */}
         <div>
           <h3 className="text-xl font-bold mb-4">Contáctanos</h3>
-          <p className="text-sm text-gray-400">Cra 49# 137 - 80, Bogotá</p>
-          <p className="text-sm text-gray-400">info@zielconsulting.com.co</p>
-          <p className="text-sm text-gray-400">Tel: 3165356364</p>
-        </div>
-      </div>
-
-      <div className="text-center text-gray-500 text-xs mt-10">
-        &copy; {new Date().getFullYear()} Ziel Consulting S.A.S. Todos los derechos reservados.
-      </div>
-    </footer>
-  );
-}
