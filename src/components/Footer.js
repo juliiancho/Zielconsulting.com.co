@@ -1,5 +1,5 @@
 import React from 'react';
-import logoFooter from '../assets/logo-footer.png'; // Ajusta esta ruta si estás en otra carpeta
+import logoFooter from '../assets/logo-footer.png'; // Asegúrate de que el nombre y extensión coincidan exactamente
 
 const Footer = ({ navigateTo }) => {
   return (
@@ -9,9 +9,9 @@ const Footer = ({ navigateTo }) => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src={logo}
+                src={logoFooter}
                 alt="Ziel Consulting Logo" 
-                className="h-12 filter brightness-0 invert" // Aplica filtros para que se vea blanco
+                className="h-12 filter brightness-0 invert" // Hace que el logo oscuro se vea blanco
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
