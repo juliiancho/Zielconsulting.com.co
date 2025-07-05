@@ -9,7 +9,7 @@ const Footer = ({ navigateTo }) => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src={logoFooter}
+                src={logo}
                 alt="Ziel Consulting Logo" 
                 className="h-12 filter brightness-0 invert" // Hace que el logo oscuro se vea blanco
               />
