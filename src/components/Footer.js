@@ -9,13 +9,13 @@ const Footer = ({ navigateTo }) => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src={logoFooter} 
+                src={logo}
                 alt="Ziel Consulting Logo" 
-                className="h-10 filter brightness-0 invert" // Aplica filtros para que se vea blanco
+                className="h-12 filter brightness-0 invert" // Aplica filtros para que se vea blanco
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Consultoría especializada en sistemas de gestión, calidad, medio ambiente y seguridad laboral.
+              Aliados estratégicos para transformar tu organización
             </p>
           </div>
           <div>
