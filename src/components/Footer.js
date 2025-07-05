@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png'; // Asegúrate de que la ruta sea correcta
 
 export default function Footer({ navigateTo }) {
   return (
@@ -7,7 +8,7 @@ export default function Footer({ navigateTo }) {
         
         {/* Columna 1: Logo + lema */}
         <div>
-          <img src="/logo.png" alt="Logo Ziel Consulting" className="w-36 mb-4" />
+          <img src={logo} alt="Logo Ziel Consulting" className="w-36 mb-4" />
           <p className="text-sm text-gray-400">
             Soluciones empresariales con impacto.
           </p>
