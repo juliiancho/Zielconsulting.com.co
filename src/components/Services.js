@@ -11,7 +11,7 @@ const Services = () => {
         "Gobierno Corporativo",
         "Objetivos e Indicadores Clave (OKR)",
         "Analisis del Contexto de la Organización",
-        "Análisis del Contexto de la Organozación"
+        "Análisis del Contexto de la Organozación",
         "Transformación Organizacional"
       ]
     },
@@ -23,11 +23,11 @@ const Services = () => {
         "Sistemas de Gestión en SST (ISO45001)",
         "Seguridad en la Cadena de Suministro (BASC, OEA, ISO28000)",
         "Seguridad de la Información (ISO27001)",
-        "Auditoría Inerna"
+        "Auditoría Inerna",
         "Implementación de buenas prácticas de manufactura (BPM) y laboratorio (BPL)"
       ]
     },
-       sst: {
+    sst: {
       name: "Salud y Seguridad en el Trabajo (SST)",
       items: [
         "Implementación del SG-SST según Decreto 1072 y Resolución 312",
@@ -47,7 +47,7 @@ const Services = () => {
       name: "Ingeniería de Procesos",
       items: [
         "Rediseño de procesos bajo enfoque Lean",
-        "Definición y validación de layout de planta,
+        "Definición y validación de layout de planta",
         "Análisis de tiempos y movimientos",
         "Estudio de capacidad instalada y balance de líneas",
         "Diseño e implementación de indicadores operativos",
