@@ -1,65 +1,83 @@
 import React, { useState } from 'react';
 
 const Services = () => {
-  const [activeTab, setActiveTab] = useState('calidad');
+  const [activeTab, setActiveTab] = useState('estrategia');
 
   const services = {
-    calidad: {
-      name: "Gestión de Calidad",
+    estrategia: {
+      name: "Estrategia Corporativa",
       items: [
-        "Implementación de sistemas de gestión",
-        "Auditorías",
-        "Indicadores de gestión (KPI)",
-        "Gestión del cambio",
-        "Formación y capacitación"
+        "Planeación Estrategica",
+        "Gobierno Corporativo",
+        "Objetivos e Indicadores Clave (OKR)",
+        "Analisis del Contexto de la Organización",
+        "Análisis del Contexto de la Organozación"
+        "Transformación Organizacional"
       ]
     },
-    procesos: {
-      name: "Gestión de Procesos",
+    sistemas: {
+      name: "Sistemas de Gestión",
       items: [
-        "Análisis de tiempos y movimientos",
-        "Distribución de planta",
-        "Buenas prácticas de manufactura y almacenamiento",
-        "Control de inventarios",
-        "Rutas críticas y costos de producción",
-        "Apoyo en licitaciones"
+        "Sistemas de Gestión de Calidad (ISO9001)",
+        "Sistemas de Gestión de Ambiental (ISO14001)",
+        "Sistemas de Gestión en SST (ISO45001)",
+        "Seguridad en la Cadena de Suministro (BASC, OEA, ISO28000)",
+        "Seguridad de la Información (ISO27001)",
+        "Auditoría Inerna"
+        "Implementación de buenas prácticas de manufactura (BPM) y laboratorio (BPL)"
       ]
     },
-    ambiental: {
-      name: "Gestión Ambiental",
-      items: [
-        "Implementación de sistemas de gestión ambiental",
-        "Auditorías",
-        "Formación",
-        "Programas de uso eficiente de recursos",
-        "Medición de huella hídrica, energética, de papel y carbono",
-        "Trámites, planes de saneamiento y gestión de residuos",
-        "Acompañamiento en programas gubernamentales",
-        "Interventoría ambiental"
-      ]
-    },
-    sst: {
+       sst: {
       name: "Salud y Seguridad en el Trabajo (SST)",
       items: [
-        "Implementación del SG-SST",
+        "Implementación del SG-SST según Decreto 1072 y Resolución 312",
         "Análisis e inspección de puestos de trabajo",
         "Evaluaciones médicas ocupacionales",
-        "Intervención del riesgo psicosocial (batería, vigilancia)",
+        "Aplicación e intervención de BRP (Batería de Riesgo Psicosocial)",
         "Investigación de accidentes laborales",
+        "Programas de vigilancia epidemiológica",
         "Plan estratégico de seguridad vial (PESV)",
+        "Plan de Emergencias",
         "Profesiogramas",
         "Auditorías",
         "Formación"
       ]
     },
-    riesgo: {
-      name: "Gestión del Riesgo",
+    procesos: {
+      name: "Ingeniería de Procesos",
       items: [
-        "SARLAFT – Lavado de Activos",
-        "Certificaciones BASC / OEA",
-        "Planes de continuidad de negocio",
-        "Gestión de crisis",
-        "Inspecciones de seguridad"
+        "Rediseño de procesos bajo enfoque Lean",
+        "Definición y validación de layout de planta,
+        "Análisis de tiempos y movimientos",
+        "Estudio de capacidad instalada y balance de líneas",
+        "Diseño e implementación de indicadores operativos",
+        "Mapas de procesos y flujos de valor",
+        "Diagnóstico y mejora continua (Kaizen, 5S, PDCA)",
+        "Simulación de escenarios productivos",
+        "Optimización de flujos logísticos"
+      ]
+    },
+    cumplimiento: {
+      name: "Cumplimiento",
+      items: [
+        "Trámite de licencias ambientales y sectoriales",
+        "Sistemas de prevención de lavado de activos",
+        "Programas de ética y anticorrupción",
+        "Política de protección de datos personales",
+        "Desarrollo de políticas de cumplimiento organizacional"
+      ]
+    },
+    sostenibilidad: {
+      name: "Sostenibilidad",
+      items: [
+        "Diseño de estrategias de sostenibilidad empresarial",
+        "Construcción de informes de sostenibilidad (GRI, TCFD, SASB)",
+        "Medición y gestión de huella de carbono",
+        "Implementación de modelos de cumplimiento social (SMETA, BSCI, SA8000)",
+        "Diseño e implementación de políticas de RSE",
+        "Programas de compras sostenibles y evaluación de proveedores",
+        "Asesoría en obtención de certificaciones sostenibles (Empresa B, Carbono Neutro, etc.)",
+        "Capacitación a directivos en enfoque ESG"
       ]
     },
     adicionales: {
