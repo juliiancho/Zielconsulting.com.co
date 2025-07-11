@@ -63,7 +63,7 @@ const Contact = () => {
                 <span className="text-lg">Bogotá, Colombia</span>
               </div>
               <div className="flex items-start text-black">
-                <span className="text-lg">Lunes a viernes, 8:00 a.m. - 5:00 p.m.</span>
+                <span className="text-lg">Lunes a viernes, 8:00 a.m. - 6:00 p.m.</span>
               </div>
             </div>
           </div>
